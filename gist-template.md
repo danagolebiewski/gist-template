@@ -9,19 +9,25 @@ This gist will explain how to use a regular expression to validate an email addr
 
 ## Table of Contents
 
-- [Anchors](#anchors)
-- [Quantifiers](#quantifiers)
-- [Grouping Constructs](#grouping-constructs)
-- [Bracket Expressions](#bracket-expressions)
-- [Character Classes](#character-classes)
-- [The OR Operator](#the-or-operator)
-- [Flags](#flags)
-- [Character Escapes](#character-escapes)
+- [REGEX Tutorial](#regex-tutorial)
+  - [Summary](#summary)
+  - [Table of Contents](#table-of-contents)
+  - [Regex Components](#regex-components)
+    - [Anchors](#anchors)
+    - [Quantifiers](#quantifiers)
+    - [Grouping Constructs](#grouping-constructs)
+    - [Bracket Expressions](#bracket-expressions)
+    - [Character Classes](#character-classes)
+    - [The OR Operator](#the-or-operator)
+    - [Flags](#flags)
+    - [Character Escapes](#character-escapes)
+- [4) -  Purpose: Character ranges.](#4----purpose-character-ranges)
+  - [Author](#author)
 
 ## Regex Components
 
 ### Anchors
-Anchors are characters that define what is at the start and end of the string that is being examined. In this example the anchor is the "^" symbol at the beginning of the expression, and the "$" at the end of the expression. The first anchor says that the text at the start of the string matches the expression. [A-Z0-9._%+-]+@[A-Z0-9.-] in the expression says to match the characters A - Z and is case sensitive, 0-9 matches characters 0-9, can have a ".", "%", "+", "-". the first and second part are added with the "@" character.  In the last part, \.[A-Z]{2,}$, it has to match characters A-Z and is case sensitive, and characters 0-9. The {2,} part says it has to match at least 2 or more ofthe preceeding quanitifiers, and the "$" matches the end of a string.
+Anchors are characters that define what is at the start and end of the string that is being examined. In this example the anchor is the ^ symbol at the beginning of the expression, and the $ at the end of the expression. The first anchor says that the text at the start of the string matches the expression. The beginning of the expression says to match the characters A - Z and is case sensitive, 0-9 matches characters 0-9, can have any of these symbols - ., -, +. the first and second part are added with the "@" character.  In the last part it has to match characters A-Z and is case sensitive, and characters 0-9. The {2,} part says it has to match at least 2 or more ofthe preceeding quanitifiers, and the "$" matches the end of a string.
 
 ### Quantifiers
 Quantifiers are used very often. They serve as the main “building block” of complex regular expressions. In the example, the + says that it must match 1 or more tokens, and the {2,} says it has to match at least 2 or more ofthe preceeding quanitifiers. 
@@ -49,10 +55,17 @@ Flags are optional arguments that change the meaning of the expression pattern. 
 ### Character Escapes
 Character escapes help to divide the escaping rules into two different lists of characters that need to be escaped:  One for characters inside a character class, and one for characters outside a character class.
 Some examples are :
+<<<<<<< HEAD
 1) [. Purpose: Start of character class.
 2) ]  Purpose: End of character class.
 3) \  Purpose: Escaping.
 4) -  Purpose: Character ranges.
+=======
+1) [ Purpose: Start of character class.
+2) ]  Purpose: End of character class.
+3) \  Purpose: Escaping.
+4) '-' Purpose: Character ranges.
+>>>>>>> 012e94b (finished gist.template)
 5) ^  Purpose: Class Negation.
 
 Which are all used in the example. 
