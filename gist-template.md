@@ -21,7 +21,6 @@ This gist will explain how to use a regular expression to validate an email addr
     - [The OR Operator](#the-or-operator)
     - [Flags](#flags)
     - [Character Escapes](#character-escapes)
-- [4) -  Purpose: Character ranges.](#4----purpose-character-ranges)
   - [Author](#author)
 
 ## Regex Components
@@ -55,17 +54,10 @@ Flags are optional arguments that change the meaning of the expression pattern. 
 ### Character Escapes
 Character escapes help to divide the escaping rules into two different lists of characters that need to be escaped:  One for characters inside a character class, and one for characters outside a character class.
 Some examples are :
-<<<<<<< HEAD
-1) [. Purpose: Start of character class.
-2) ]  Purpose: End of character class.
-3) \  Purpose: Escaping.
-4) -  Purpose: Character ranges.
-=======
 1) [ Purpose: Start of character class.
 2) ]  Purpose: End of character class.
 3) \  Purpose: Escaping.
 4) '-' Purpose: Character ranges.
->>>>>>> 012e94b (finished gist.template)
 5) ^  Purpose: Class Negation.
 
 Which are all used in the example. 
